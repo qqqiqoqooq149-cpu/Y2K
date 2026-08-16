@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHECKOUT — VYRA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+<main class="checkout-page">
+
+    <header class="checkout-nav">
+
+        <a href="index.html" class="checkout-back">
+            ← CONTINUE SHOPPING
+        </a>
+
+<a href="index.html" class="checkout-logo">
+    <img src="images/lll.png    " alt="VYRA">
+</a>
+
+    </header>
+
+
+    <section class="checkout-layout">
+
+        <!-- LEFT -->
+
+        <div class="checkout-form">
+
+            <div class="checkout-heading">
+                <span>VYRA STUDIOS / ORDER</span>
+                <h1>CHECKOUT<span>.</span></h1>
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <section class="checkout-section">
+
+                <div class="checkout-section-title">
+                    <span>01</span>
+                    <h2>CONTACT INFORMATION</h2>
+                </div>
+
+                <div class="checkout-fields">
+
+                    <input
+                        id="fullName"
+                        type="text"
+                        placeholder="FULL NAME"
+                        autocomplete="name"
+                    >
+
+                    <input
+                        id="phone"
+                        type="tel"
+                        placeholder="PHONE NUMBER"
+                        autocomplete="tel"
+                    >
+
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="EMAIL ADDRESS"
+                        autocomplete="email"
+                    >
+
+                </div>
+
+            </section>
+
+
+            <!-- ADDRESS -->
+
+            <section class="checkout-section">
+
+                <div class="checkout-section-title">
+                    <span>02</span>
+                    <h2>SHIPPING ADDRESS</h2>
+                </div>
+
+                <div class="checkout-fields">
+
+                    <input
+                        id="address"
+                        type="text"
+                        placeholder="FULL ADDRESS"
+                        autocomplete="street-address"
+                    >
+
+                    <div class="checkout-row">
+
+                        <input
+                            id="city"
+                            type="text"
+                            placeholder="CITY"
+                            autocomplete="address-level2"
+                        >
+
+                        <input
+                            id="governorate"
+                            type="text"
+                            placeholder="GOVERNORATE"
+                            autocomplete="address-level1"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PAYMENT -->
+
+            <section class="checkout-section">
+
+                <div class="checkout-section-title">
+                    <span>03</span>
+                    <h2>PAYMENT</h2>
+                </div>
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="cod"
+                        checked
+                    >
+
+                    <span class="payment-radio"></span>
+
+                    <div>
+                        <strong>CASH ON DELIVERY</strong>
+                        <small>PAY WHEN YOUR ORDER ARRIVES</small>
+                    </div>
+
+                </label>
+
+            </section>
+
+
+            <button
+                class="place-order"
+                id="placeOrder"
+            >
+                <span>PLACE ORDER</span>
+                <span>→</span>
+            </button>
+
+            <p class="checkout-note">
+                By placing your order, you agree to VYRA's
+                terms and conditions.
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT -->
+
+        <aside class="order-summary">
+
+            <div class="summary-heading">
+
+                <span>YOUR BAG</span>
+
+                <h2>
+                    ORDER<br>
+                    SUMMARY<span>.</span>
+                </h2>
+
+            </div>
+
+
+            <div
+                class="checkout-items"
+                id="checkoutItems"
+            ></div>
+
+
+            <div
+                class="checkout-empty"
+                id="checkoutEmpty"
+            >
+                YOUR BAG IS EMPTY.
+            </div>
+
+
+            <div class="summary-total">
+
+                <div>
+                    <span>SUBTOTAL</span>
+                    <strong id="checkoutSubtotal">
+                        0 EGP
+                    </strong>
+                </div>
+
+                <div>
+                    <span>SHIPPING</span>
+                    <strong id="checkoutShipping">
+                        FREE
+                    </strong>
+                </div>
+
+                <div class="grand-total">
+                    <span>TOTAL</span>
+                    <strong id="checkoutTotal">
+                        0 EGP
+                    </strong>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+</main>
+
+
+<div
+    class="checkout-alert"
+    id="checkoutAlert"
+>
+    <span>✓</span>
+
+    <div>
+        <strong id="checkoutAlertTitle">
+            ORDER PLACED
+        </strong>
+
+        <small id="checkoutAlertText">
+            Thank you for shopping with VYRA.
+        </small>
+    </div>
+</div>
+
+
+<script src="checkout.js"></script>
+
+</body>
+</html>
